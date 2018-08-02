@@ -1,1 +1,15 @@
 <h1>The title of the app is {{title}} </h1>
+<ul>
+  <li *ngFor="let n of names">{{n}}</li>
+</ul>
+<input type="text" [(ngModel)]="data">
+<button (click)="addData()">change Model</button>
+
+<!---
+<app-child [info]="firststring" [strings]="childarray[0]"></app-child>
+<app-child [info]="secondstring" [strings]="childarray[1]"></app-child>
+
+<input type="text" [(ngModel)]="item" > 
+<button (click)="addFirst()" >First Child</button>
+<button (click)="addSecond()" >Second Child</button>
+-->
